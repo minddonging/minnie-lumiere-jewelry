@@ -1,3 +1,74 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fffaf5;
+}
+
+.hero {
+  min-height: 80vh;
+  background: linear-gradient(rgba(60,35,35,0.45), rgba(60,35,35,0.45)),
+    url("hero.jpg") center/cover no-repeat;
+  color: white;
+  padding: 30px 8%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand h2 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.brand span {
+  font-size: 13px;
+  letter-spacing: 3px;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  cursor: pointer;
+}
+
+.hero-content {
+  margin-top: 120px;
+  max-width: 600px;
+}
+
+.small-title {
+  letter-spacing: 3px;
+  font-size: 14px;
+}
+
+.hero-content h1 {
+  font-size: 56px;
+  line-height: 1.1;
+  margin: 15px 0;
+}
+
+.hero-text {
+  font-size: 18px;
+}
+
+.hero-button {
+  background: #b98b5d;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
 .product-section {
   padding: 50px 8%;
   background: #fffaf5;
