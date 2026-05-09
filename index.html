@@ -4,120 +4,40 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Minnie Lumière Jewelry</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <script defer src="js/script.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- JS -->
+  <script defer src="script.js"></script>
 </head>
 
 <body>
-  <header class="hero">
-    <nav class="navbar">
-      <div class="brand">
-        <h2>Minnie Lumière</h2>
-        <span>FINE JEWELRY</span>
-      </div>
 
-      <ul class="nav-menu">
-        <li class="navItem active" data-page="home">Home</li>
-        <li class="navItem" data-page="collection">Collection</li>
-        <li class="navItem" data-page="about">About</li>
-        <li class="navItem" data-page="contact">Contact</li>
-      </ul>
-    </nav>
+<header class="hero">
+  <nav class="navbar">
+    <div class="brand">
+      <h2>Minnie Lumière</h2>
+      <span>FINE JEWELRY</span>
+    </div>
 
-    <section class="hero-content">
-      <p class="small-title">New Luxury Collection</p>
-      <h1>Timeless Elegance,<br>Especially for You</h1>
-      <p class="hero-text">
-        Discover elegant jewelry pieces designed to shine beautifully in every moment.
-      </p>
-      <button class="hero-button">Explore Collection</button>
-    </section>
-  </header>
+    <ul class="nav-menu">
+      <li>Home</li>
+      <li>Collection</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
 
-  <main>
-    <section class="page-box">
-      <p class="small-title" id="pageSmallTitle">Welcome</p>
-      <h2 id="pageTitle">Home</h2>
-      <p id="pageText">
-        Welcome to Minnie Lumière, a luxury jewelry brand inspired by soft gold, pearls, and timeless elegance.
-      </p>
-    </section>
+  <section class="hero-content">
+    <p class="small-title">New Luxury Collection</p>
+    <h1>Timeless Elegance,<br>Especially for You</h1>
+    <p class="hero-text">
+      Discover elegant jewelry pieces designed to shine beautifully in every moment.
+    </p>
+    <button class="hero-button">Explore Collection</button>
+  </section>
+</header>
 
-    <section class="intro">
-      <p class="small-title">Our Collection</p>
-      <h2>Elegance in Every Detail</h2>
-      <div class="line"></div>
-      <p>
-        Minnie Lumière brings soft gold tones, delicate pearls, and refined modern jewelry
-        together for a graceful everyday look.
-      </p>
-    </section>
-
-    <section class="dropdown-section">
-      <label for="menuDropdown">Choose a jewelry category</label>
-      <select id="menuDropdown">
-        <option value="necklace">Necklace</option>
-        <option value="ring">Ring</option>
-        <option value="bracelet">Bracelet</option>
-      </select>
-    </section>
-
-    <section class="carousel-section">
-      <button id="prevBtn" class="arrow-btn">‹</button>
-
-      <div class="carousel-card">
-        <div class="image-box">
-          <img id="carouselImage" src="images/necklace.jpg" alt="Jewelry product" />
-        </div>
-
-        <div class="product-info">
-          <p class="small-title">Featured Piece</p>
-          <h2 id="carouselTitle">Pearl Layered Necklace</h2>
-          <p id="carouselText">
-            A graceful layered necklace with pearl details, perfect for a soft luxury style.
-          </p>
-          <p id="carouselPrice">$120</p>
-          <p id="carouselStock">In Stock</p>
-          <button class="shop-button">View Details</button>
-        </div>
-      </div>
-
-      <button id="nextBtn" class="arrow-btn">›</button>
-    </section>
-
-    <section class="category-result">
-      <p class="small-title">Selected Category</p>
-      <h2 id="categoryTitle">Necklace Collection</h2>
-      <p id="categoryText">
-        Our necklace collection features layered gold chains, pearl details, and elegant feminine styling.
-      </p>
-    </section>
-
-    <section class="dynamic-products">
-      <p class="small-title">Products from JavaScript Data</p>
-      <h2>Available Jewelry</h2>
-      <div id="productList" class="product-list"></div>
-    </section>
-
-    <section class="features">
-      <div>
-        <h3>Premium Quality</h3>
-        <p>Carefully selected materials with refined finishing.</p>
-      </div>
-      <div>
-        <h3>Timeless Design</h3>
-        <p>Classic jewelry pieces that never go out of style.</p>
-      </div>
-      <div>
-        <h3>Beautiful Gift</h3>
-        <p>Perfect for birthdays, anniversaries, and special moments.</p>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <h2>Minnie Lumière</h2>
-    <p>© 2026 Minnie Lumière Jewelry. JavaScript Dropdown, Carousel, Conditionals & Loops Project.</p>
-  </footer>
 </body>
 </html>
