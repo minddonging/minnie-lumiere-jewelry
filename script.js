@@ -27,7 +27,7 @@ const jewelryData = [
 
 console.log("Minnie Lumière Jewelry project loaded successfully.");
 
-// Button click
+// Hero button
 const heroButton = document.querySelector(".hero-button");
 
 if (heroButton) {
@@ -36,11 +36,43 @@ if (heroButton) {
   });
 }
 
-// Loop example
+// Create product section
+const productSection = document.createElement("section");
+productSection.classList.add("product-section");
+
+productSection.innerHTML = `
+  <h2>Featured Jewelry Collection</h2>
+  <p>Explore our elegant jewelry pieces below.</p>
+  <div id="productContainer" class="product-container"></div>
+`;
+
+document.body.appendChild(productSection);
+
+const productContainer = document.getElementById("productContainer");
+
+// Loop + DOM
 jewelryData.forEach(function (item) {
+  const card = document.createElement("div");
+  card.classList.add("product-card");
+
+  let stockText = "";
+  let stockClass = "";
+
   if (item.inStock) {
-    console.log(item.name + " is in stock.");
+    stockText = "In Stock";
+    stockClass = "in-stock";
   } else {
-    console.log(item.name + " is out of stock.");
+    stockText = "Out of Stock";
+    stockClass = "out-stock";
   }
+
+  card.innerHTML = `
+    <img src="${item.image}" alt="${item.name}">
+    <h3>${item.name}</h3>
+    <p>${item.description}</p>
+    <p class="price">$${item.price}</p>
+    <p class="${stockClass}">${stockText}</p>
+  `;
+
+  productContainer.appendChild(card);
 });
